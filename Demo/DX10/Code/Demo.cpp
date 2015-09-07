@@ -25,7 +25,7 @@
 
 #include "DXUT.h"
 #include "DXUTgui.h"
-#include "DXUTsettingsDlg.h"
+#include "DXUTsettingsdlg.h"
 #include "SDKmesh.h"
 #include "SDKmisc.h"
 

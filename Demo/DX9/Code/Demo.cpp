@@ -29,7 +29,7 @@
 #include "DXUT.h"
 #include "DXUTgui.h"
 #include "DXUTmisc.h"
-#include "DXUTSettingsDlg.h"
+#include "DXUTsettingsdlg.h"
 #include "SDKmisc.h"
 
 #include "SMAA.h"

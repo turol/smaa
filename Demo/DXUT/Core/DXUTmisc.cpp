@@ -5,7 +5,7 @@
 //
 // Copyright (c) Microsoft Corporation. All rights reserved
 //--------------------------------------------------------------------------------------
-#include "dxut.h"
+#include "DXUT.h"
 #include <xinput.h>
 #define DXUT_GAMEPAD_TRIGGER_THRESHOLD      30
 #undef min // use __min instead

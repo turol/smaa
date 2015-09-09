@@ -490,12 +490,12 @@ void initSMAA(ID3D10Device *device, const DXGI_SURFACE_DESC *desc) {
     slider = hud.GetSlider(IDC_MAX_SEARCH_STEPS);
     slider->GetRange(min, max);
     scale = float(slider->GetValue()) / (max - min);
-    smaa->setMaxSearchSteps(int(round(112.0f * scale)));
+    smaa->setMaxSearchSteps(int(round(112.0 * scale)));
 
     slider = hud.GetSlider(IDC_MAX_SEARCH_STEPS_DIAG);
     slider->GetRange(min, max);
     scale = float(slider->GetValue()) / (max - min);
-    smaa->setMaxSearchStepsDiag(int(round(20.0f * scale)));
+    smaa->setMaxSearchStepsDiag(int(round(20.0 * scale)));
 
     slider = hud.GetSlider(IDC_CORNER_ROUNDING);
     slider->GetRange(min, max);
@@ -1183,10 +1183,10 @@ void CALLBACK onGUIEvent(UINT event, int id, CDXUTControl *control, void *contex
                 slider->GetRange(min, max);
 
                 float scale = float(slider->GetValue()) / (max - min);
-                smaa->setMaxSearchSteps(int(round(scale * 112.0f)));
+                smaa->setMaxSearchSteps(int(round(scale * 112.0)));
 
                 wstringstream s;
-                s << L"Max Search Steps: " << int(round(scale * 112.0f));
+                s << L"Max Search Steps: " << int(round(scale * 112.0));
                 hud.GetStatic(IDC_MAX_SEARCH_STEPS_LABEL)->SetText(s.str().c_str());
             }
             break;
@@ -1197,10 +1197,10 @@ void CALLBACK onGUIEvent(UINT event, int id, CDXUTControl *control, void *contex
                 slider->GetRange(min, max);
 
                 float scale = float(slider->GetValue()) / (max - min);
-                smaa->setMaxSearchStepsDiag(int(round(scale * 20.0f)));
+                smaa->setMaxSearchStepsDiag(int(round(scale * 20.0)));
 
                 wstringstream s;
-                s << L"Max Diag. Search Steps: " << int(round(scale * 20.0f));
+                s << L"Max Diag. Search Steps: " << int(round(scale * 20.0));
                 hud.GetStatic(IDC_MAX_SEARCH_STEPS_DIAG_LABEL)->SetText(s.str().c_str());
             }
             break;
